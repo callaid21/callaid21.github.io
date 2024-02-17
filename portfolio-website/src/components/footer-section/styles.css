@@ -1,0 +1,35 @@
+.black-bg{
+    height: 300px;
+    width: 100%;
+    background-color: var(--clr-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 1rem;
+    padding-top: 1rem;
+}
+
+.social-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    max-width: 10px;
+}
+
+.social-container img{
+    width: 26px;
+    max-width: min-content;
+}
+
+.underline{
+    border-bottom: 2px solid var(--clr-dark-red);
+    padding-top: 2rem;
+    width: 100%;
+}
+
+.end-text{
+    font-size: 12px;
+    margin-top: 1rem;
+}

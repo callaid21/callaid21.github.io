@@ -1,0 +1,9 @@
+.logos-slide img{
+  width: 50%;
+  aspect-ratio: 1;
+}
+
+.logos-slide{
+  gap: 3rem;
+  margin-bottom: 3rem;
+}

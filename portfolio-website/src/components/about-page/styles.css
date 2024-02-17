@@ -1,0 +1,39 @@
+.about-page-container{
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-inline: 1rem;
+    justify-content: center;
+}
+
+.header p{
+    margin-block: 2rem;
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-side p{
+    margin-top: auto;
+    line-height: 2.5rem;
+}
+
+.right-side img{
+    height: 100%;
+    aspect-ratio: 1;
+    box-shadow: var(--box-shadow);
+}
+
+.bottom{
+    margin-top: auto;
+}
+
+@media (max-width: 75.938em) {
+    .right-side img{
+        max-width: 80%;
+        margin-inline: auto;
+    }
+}

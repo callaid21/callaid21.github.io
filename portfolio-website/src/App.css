@@ -1,0 +1,189 @@
+/* CSS Reset */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,400;9..40,700;9..40,1000&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    font-family: 'DM Sans', sans-serif;
+}
+
+html{
+    color-scheme: dark light;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+h2{
+    font-size: var(--fs-small);
+    font-weight: 600;
+}
+
+p{
+    font-size: var(--fs-xsmall);
+}
+
+.button {
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 99rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: var(--fs-xsmall);
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: none;
+    cursor: pointer;
+    max-width: 200px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--clr-dark-red);
+      border-radius: 10rem;
+      z-index: -2;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: var(--clr-light-red);
+      transition: all .3s;
+      border-radius: 10rem;
+      z-index: -1;
+    }
+
+    &:hover {
+      color: #fff;
+      &:before {
+        width: 100%;
+      }
+    }
+}
+
+.button a{
+    text-decoration: none;
+    color: var(--clr-white);
+}
+
+/* Global Variables */
+
+:root{
+
+    --clr-dark-red: #8A1414;
+    --clr-light-red: #F62222;
+    --clr-grey: #8F8F8F;
+    --clr-black: #000000;
+    --clr-white: #FFFFFF;
+    --clr-dark-grey: #121212;
+
+    --fw-200: 200;
+    --fw-400: 400;
+    --fw-700: 700;
+    --fw-1000: 1000;
+
+    --fs-xl: clamp(2rem, 10vw, 10rem);
+    --fs-large: clamp(1rem, 7vw, 5rem);
+    --fs-medium: clamp(1rem, 2.5vw, 2rem);
+    --fs-small: clamp(1.5rem, 3vw, 2rem);
+    --fs-xsmall: clamp(1.1rem, 1vw, 1.3rem);
+
+    --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+
+    .dark{
+        background-color: var(--clr-dark-grey);
+        color: var(--clr-white);
+    }
+
+    .dark-text-only{
+        color: var(--clr-white);
+    }
+
+    .bg-image-dark{
+        background-image: url('../public/images/topographic-bg-dark.jpg');
+        background-size: cover;
+        color: var(--clr-white);
+    }
+
+    .wrapper{
+        max-width: 1300px;
+        margin-inline: auto;
+    }
+
+    .overflow-hidden{
+        overflow: hidden;
+    }
+
+    .visually-hidden{
+        clip: rect(0 0 0 0); 
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap; 
+        width: 1px;
+    }
+
+    .red-divider{
+        margin-inline: auto;
+        border-bottom: 5px solid var(--clr-dark-red);
+        width: 20%;
+        border-radius: 10px;
+        margin-block: 2rem;
+    }
+
+    .even-columns{
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-auto-flow: column;
+        gap: 5rem;
+        height: min-content;
+    }
+
+    .header{
+        text-align: center;
+        margin-top: 5rem;
+    }
+    
+    .header h1{
+        margin-inline: auto;
+        width: max-content;
+        font-size: var(--fs-large);
+        font-weight: 600;
+    }
+
+    .flex{
+        display: flex;
+    }
+    
+    .center{
+        justify-content: center;
+    }
+        
+
+    @media (max-width: 75.938em) {
+        .even-columns{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
+}
