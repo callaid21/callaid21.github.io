@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.0fd2d956.css",
+    "main.css": "/static/css/main.8dccb901.css",
     "main.js": "/static/js/main.a5f3af42.js",
     "static/js/453.2ddb282f.chunk.js": "/static/js/453.2ddb282f.chunk.js",
     "static/media/topographic-bg-dark.jpg": "/static/media/topographic-bg-dark.71b34c7eca2d268db7f2.jpg",
     "index.html": "/index.html",
-    "main.0fd2d956.css.map": "/static/css/main.0fd2d956.css.map",
+    "main.8dccb901.css.map": "/static/css/main.8dccb901.css.map",
     "main.a5f3af42.js.map": "/static/js/main.a5f3af42.js.map",
     "453.2ddb282f.chunk.js.map": "/static/js/453.2ddb282f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0fd2d956.css",
+    "static/css/main.8dccb901.css",
     "static/js/main.a5f3af42.js"
   ]
 }
