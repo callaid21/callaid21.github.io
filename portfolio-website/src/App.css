@@ -121,6 +121,7 @@ p{
         background-image: url('../public/images/topographic-bg-dark.jpg');
         background-size: cover;
         color: var(--clr-white);
+        background-repeat: no-repeat;
     }
 
     .wrapper{
@@ -130,6 +131,14 @@ p{
 
     .overflow-hidden{
         overflow: hidden;
+    }
+
+    .padding-inline{
+        padding-inline: 1rem;
+    }
+
+    .padding-block{
+        padding-block: 1rem
     }
 
     .visually-hidden{
@@ -160,7 +169,7 @@ p{
 
     .header{
         text-align: center;
-        margin-top: 5rem;
+        /* margin-top: 5rem; */
     }
     
     .header h1{

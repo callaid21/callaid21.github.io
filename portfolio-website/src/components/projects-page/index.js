@@ -9,7 +9,7 @@ import { GoArrowUpRight } from "react-icons/go";
 const ProjectsPage = () => {
     
     return(
-        <div className='dark' id="projects">
+        <div className='dark padding-block' id="projects">
             <div className="wrapper">
                 <div className="header">
                     <h1>Projects</h1>   
@@ -20,9 +20,9 @@ const ProjectsPage = () => {
 
                     <div className="project even-columns">
                         <Reveal>
-                            <div>
+                           
                                 <img src="./website-screenshots/spacedLarge.png" alt="spaced"/> 
-                            </div>
+                           
                         </Reveal>
                         <div className="project-info">
                             <Link className='title' to='./spaced-project'>

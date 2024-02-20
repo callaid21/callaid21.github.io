@@ -20,8 +20,7 @@ const Navbar = () => {
             <div className='flex center'>
                 <div className='nav-container'>
                     <div className='nav-header'>
-                        {/* <img src='./images/kylo-placeholder.jpg' alt=""/> */}
-                        <h1>Aidan Callahan</h1>
+                        <img src='./icons/logo.svg' alt='logo'/>
                     </div>
                     <ul className={mobileNav ? 'primary-nav' : 'primary-nav none'}>
                         <Link className='nav-link' to='home' smooth={true} duration={500} activeClass='active'>Home</Link>

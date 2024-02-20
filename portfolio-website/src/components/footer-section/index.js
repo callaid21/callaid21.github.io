@@ -13,7 +13,7 @@ const Footer = () => {
                     <div className="right-side">
                         <h1>SOCIAL</h1>
                         <div className="social-container">
-                            <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer"><img src="./icons/linkedIn.png" alt=""/></a>
+                            <a href="https://www.linkedin.com/in/aidan-callahan-4a92762b5/" target="_blank" rel="noopener noreferrer"><img src="./icons/linkedIn.png" alt=""/></a>
                             <a href="https://github.com/callaid21" target="_blank" rel="noopener noreferrer"><img src="./icons/githubWhite.png" alt=""/></a>
                         </div>
                     </div>
