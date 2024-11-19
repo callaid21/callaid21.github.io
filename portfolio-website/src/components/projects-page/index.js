@@ -22,7 +22,7 @@ const ProjectsPage = () => {
         <div className="projects-container">
           <div className="project even-columns">
             <Reveal>
-              <img src="./website-screenshots/NFLbg.png" alt="spaced" />
+              <img src="./website-screenshots/NFLbg.PNG" alt="spaced" />
             </Reveal>
             <div className="project-info">
               <Link className="title" to="./nfl-project">
@@ -48,7 +48,7 @@ const ProjectsPage = () => {
 
           <div className="project even-columns">
             <Reveal>
-              <img src="./website-screenshots/spacedLarge.png" alt="spaced" />
+              <img src="./website-screenshots/spacedLarge.PNG" alt="spaced" />
             </Reveal>
             <div className="project-info">
               <Link className="title" to="./spaced-project">
@@ -138,7 +138,7 @@ const ProjectsPage = () => {
             <Reveal>
               <div>
                 <img
-                  src="./website-screenshots/portfolioLarge.png"
+                  src="./website-screenshots/portfolioLarge.PNG"
                   alt="portfolio website"
                 />
               </div>
